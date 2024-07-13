@@ -1,5 +1,5 @@
-
-export const resolvers = {
+import { Resolvers } from "./types";
+export const resolvers: Resolvers = {
 // returns an array of Tracks that will be used to populate
 // the homepage grid of our web client
 
