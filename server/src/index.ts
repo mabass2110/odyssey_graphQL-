@@ -7,9 +7,10 @@ import { TrackAPI } from "./datasources/track-api";
 
 const startApolloServer = async () => {
     const server = new ApolloServer({ 
-        typeDefs, resolvers
+        typeDefs,resolvers
     });
 
+    //initializes the server and returns dataSourcede from server's configuration object
     const { url } = await startStandaloneServer(server, {
       context: async () => {
         const { cache } = server;
