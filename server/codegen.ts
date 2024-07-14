@@ -6,7 +6,8 @@ const config: CodegenConfig = {
         "./src/types.ts": {
             plugins: ["typescript", "typescript-resolvers"],
             config: {
-                contextType: "./context#DataSourceContext"
+                contextType: "./context#DataSourceContext",
+                mappers: "./models#TrackModel"
             }
         },
         },
