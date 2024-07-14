@@ -12,9 +12,9 @@ export const resolvers: Resolvers = {
 
     Track : {
 
-        author: ({authorID}, __ , {dataSources}) => {
-            console.log(dataSources)
-            return dataSources.trackAPI.getAuthor(authorID);
+        author: ({authorId}, _ , {dataSources}) => {
+
+            return dataSources.trackAPI.getAuthor(authorId);
         }
 
     }
