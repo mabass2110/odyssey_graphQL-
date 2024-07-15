@@ -19,11 +19,9 @@ export const typeDefs = gql`
         thumbnail: String
         length: Int
         modulesCount: Int
-        description: string;
-   	  numberOfViews: number;
-
-        "The track's complete array of Modules"
-         modules: [Module!]!
+        description: String
+   	  numberOfViews: Int
+        modules: [Module!]!
     }
         "Author of a complete Track or a Module"
      type Author {
