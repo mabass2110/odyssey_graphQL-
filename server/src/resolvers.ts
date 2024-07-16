@@ -12,7 +12,7 @@ export const resolvers: Resolvers = {
 
     Mutation: {
         // increments a track's numberOfViews property
-        incrementTrackView: (_,{id}, {dataSources}) => {
+        incrementTrackView: async (_,{id}, {dataSources}) => {
             const track = dataSources.trackAPI.incrementTrackViews(id);
             return{
                 code: 200,
