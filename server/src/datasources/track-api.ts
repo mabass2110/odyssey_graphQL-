@@ -14,7 +14,6 @@ export class TrackAPI extends RESTDataSource{
         return this.get<AuthorModel>(`author/${encodeURIComponent(authorId)}`);
       }
 
-
       //returns a track using id
     getTrack(trackId: string) {
         return this.get<TrackModel>(`track/${trackId}`);
@@ -23,5 +22,9 @@ export class TrackAPI extends RESTDataSource{
       //returns a module for a certain track
     getTrackModules(trackId: string){
       return this.get<ModuleModel[]>(`track/${trackId}/modules`);
+    }
+
+    incrementTrackViews(trackId: string) {
+      return this.patch<TrackModel>(`track/${trackId}/numberOfViews`);
     }
 }
