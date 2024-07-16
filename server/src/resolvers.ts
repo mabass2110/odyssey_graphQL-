@@ -22,7 +22,6 @@ export const resolvers: Resolvers = {
                 track,
             }
         }
-
           catch (err) {
             return {
                 code: err.extensions.response.status,
@@ -31,7 +30,7 @@ export const resolvers: Resolvers = {
                 track: null
           }
         }
-    },
+    }},
 
     Track: {
         author: ({ authorId }, _, { dataSources }) => {
