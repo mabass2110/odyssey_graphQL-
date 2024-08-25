@@ -26,8 +26,8 @@ This repository provides a GraphQL server implementation using Apollo Server and
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/mabass2110/odyssey_graphQL-
+   cd odyssey_graphQL-
    ```
 
 2. Install dependencies:
@@ -114,7 +114,3 @@ This project is licensed under the MIT License.
 ## Contact
 
 For questions or comments, please contact hfmabasso@gmail.com.
-
----
-
-This README provides a comprehensive guide to understanding, running, and contributing to the project. Make sure to replace placeholders like `<repository-url>`, `<repository-directory>`, and `[Your Name]` with actual information relevant to your project.
